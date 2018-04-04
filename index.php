@@ -27,6 +27,6 @@ if(strpos($text,'$appToken')!==false){
 
 $channelUserName="@activationchanneltest";
 
-if(strpos($text,'/activate-channel')!==false){
+if(strpos($text,'/writechannel')!==false){
 	file_get_contents($website."/sendmessage?".$channelUserName."=".$chatId."&text=speaking to the masses");
 }
